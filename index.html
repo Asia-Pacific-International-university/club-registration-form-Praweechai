@@ -13,15 +13,23 @@
     </header>
 
     <main>
-        <!-- TODO: Create your form here in Step 1 -->
-        <!-- Requirements for Step 1:
-             - Form with POST method
-             - Action should point to process.php
-             - Name field (text input)
-             - Email field (email input)  
-             - Club selection (select dropdown with at least 3 options)
-             - Submit button
-        -->
+        <form method="POST" action="process.php">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="club">Select Club:</label><br>
+            <select id="club" name="club" required>
+                <option value="">-- Please choose a club --</option>
+                <option value="Art Club">Art Club</option>
+                <option value="Science Club">Science Club</option>
+                <option value="Music Club">Music Club</option>
+            </select><br><br>
+
+            <button type="submit">Register</button>
+        </form>
     </main>
 
     <footer>
