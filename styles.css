@@ -9,3 +9,64 @@ Requirements for Step 2:
 - Use at least 3 different CSS properties (color, background, padding, margin, border, etc.)
 - Make it look professional and easy to read
 */
+
+body {
+    background: #E3FDFD;
+    color: #222;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background: #CBF1F5;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+form {
+    background: #A6E3E9;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(113, 201, 206, 0.15);
+    min-width: 320px;
+}
+
+label {
+    font-weight: bold;
+    color: #222;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0 1em 0;
+    border: 1px solid #71C9CE;
+    border-radius: 6px;
+    background: #E3FDFD;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background: #71C9CE;
+    color: #fff;
+    border: none;
+    padding: 0.7em 1.5em;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: #222;
+}
