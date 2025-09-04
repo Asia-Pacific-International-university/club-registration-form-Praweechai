@@ -70,3 +70,104 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: #222;
 }
+
+/* Additional form styling for enhanced features */
+.form-group {
+    margin: 1em 0;
+}
+
+input[type="tel"] {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0 1em 0;
+    border: 1px solid #71C9CE;
+    border-radius: 6px;
+    background: #E3FDFD;
+    font-size: 1em;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 0.5em 0;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0 1em 0;
+    border: 1px solid #71C9CE;
+    border-radius: 6px;
+    background: #E3FDFD;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Error and success message styling */
+.error-messages {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 1em;
+    border-radius: 6px;
+    margin: 1em 0;
+}
+
+.error-messages ul {
+    margin: 0;
+    padding-left: 1.5em;
+}
+
+.success-container {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    padding: 2em;
+    margin: 2em 0;
+}
+
+.registration-details {
+    background: #f8f9fa;
+    padding: 1em;
+    border-radius: 6px;
+    margin: 1em 0;
+}
+
+.registrations-list {
+    background: #e9ecef;
+    padding: 1em;
+    border-radius: 6px;
+    margin: 1em 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.registration-item {
+    background: white;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border-radius: 4px;
+    border-left: 4px solid #71C9CE;
+}
+
+.search-box {
+    width: 100%;
+    padding: 0.5em;
+    margin: 1em 0;
+    border: 1px solid #71C9CE;
+    border-radius: 4px;
+}

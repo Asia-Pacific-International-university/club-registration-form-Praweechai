@@ -10,24 +10,71 @@
     <header>
         <h1>Student Club Registration</h1>
         <p>Join one of our exciting student clubs!</p>
+        <div style="margin-top: 1em;">
+            <a href="view-registrations.php" style="background: #71C9CE; color: white; padding: 0.5em 1em; text-decoration: none; border-radius: 6px; display: inline-block; margin-right: 1em;">View All Registrations</a>
+        </div>
     </header>
 
     <main>
         <form method="post" action="process.php">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+            <div class="form-group">
+                <label for="name">Name: *</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+            </div>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <div class="form-group">
+                <label for="email">Email: *</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+            </div>
 
-            <label for="club">Select Club:</label><br>
-            <select id="club" name="club" required>
-                <option value="">-- Please choose a club --</option>
-                <option value="Art Club">Art Club</option>
-                <option value="Science Club">Science Club</option>
-                <option value="Music Club">Music Club</option>
-                <option value="Drama Club">Drama Club</option>
-            </select><br><br>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890"><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="club">Select Club: *</label><br>
+                <select id="club" name="club" required>
+                    <option value="">-- Please choose a club --</option>
+                    <option value="Art Club">Art Club</option>
+                    <option value="Science Club">Science Club</option>
+                    <option value="Music Club">Music Club</option>
+                    <option value="Drama Club">Drama Club</option>
+                    <option value="Programming Club">Programming Club</option>
+                    <option value="Sports Club">Sports Club</option>
+                </select><br><br>
+            </div>
+
+            <div class="form-group">
+                <label>Interests (select all that apply):</label><br>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="interest-art" name="interests[]" value="Art">
+                        <label for="interest-art">Art</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="interest-science" name="interests[]" value="Science">
+                        <label for="interest-science">Science</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="interest-music" name="interests[]" value="Music">
+                        <label for="interest-music">Music</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="interest-sports" name="interests[]" value="Sports">
+                        <label for="interest-sports">Sports</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="interest-technology" name="interests[]" value="Technology">
+                        <label for="interest-technology">Technology</label>
+                    </div>
+                </div><br>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Previous Experience (optional):</label><br>
+                <textarea id="experience" name="experience" placeholder="Tell us about any relevant experience you have..."></textarea><br><br>
+            </div>
 
             <input type="submit" name="submit" value="Register">
         </form>
